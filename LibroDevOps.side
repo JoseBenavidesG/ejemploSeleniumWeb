@@ -1,0 +1,174 @@
+{
+  "id": "79154d51-1c9b-4ae1-a675-493da33af98f",
+  "version": "2.0",
+  "name": "LibroDevOps",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "321a56b0-951f-43f2-a138-207c4e1b88db",
+    "name": "CompraLibroAmazon",
+    "commands": [{
+      "id": "4eb629e3-51b1-447b-bd15-bd98fc43d0b2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a5a3907-80c9-43f3-a465-9aaa840ed16c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1227x560",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c95cf085-b127-4db6-a02b-50fbf5b7db0d",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Libros de Devop"
+    }, {
+      "id": "bbb27a1f-0ab5-42c3-9345-313cbc84b41d",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "0bcb1a4c-9ca1-42e0-955d-ce2c8b532f62",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ct5Ked:nth-child(3) .keP9hb",
+      "targets": [
+        ["css=.ct5Ked:nth-child(3) .keP9hb", "css:finder"],
+        ["xpath=//g-scrolling-carousel[@id='_eWcPYNvELdmc5OUP9IiQ2Ag19']/div/div/a[3]/div/div/div", "xpath:idRelative"],
+        ["xpath=//a[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bb9bdb7-1d0f-47fb-b1a3-e2e20c4a308a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.s1SShd .keP9hb",
+      "targets": [
+        ["css=.s1SShd .keP9hb", "css:finder"],
+        ["xpath=//g-scrolling-carousel[@id='_imcPYLWzOpXA5OUP2eW4cA19']/div/div/a[3]/div/div/div", "xpath:idRelative"],
+        ["xpath=//a[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44845712-bdcc-4aab-9c7d-09f845e08e12",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.s1SShd .keP9hb",
+      "targets": [
+        ["css=.s1SShd .keP9hb", "css:finder"],
+        ["xpath=//g-scrolling-carousel[@id='_imcPYLWzOpXA5OUP2eW4cA19']/div/div/a[3]/div/div/div", "xpath:idRelative"],
+        ["xpath=//a[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67f9c496-fe9e-4a60-8c49-827172491ecb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.qrShPb > span",
+      "targets": [
+        ["css=.qrShPb > span", "css:finder"],
+        ["xpath=//div[@id='mh_tsuid71']/div/div/div[2]/h2/span", "xpath:idRelative"],
+        ["xpath=//h2/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Effective DevOps: Building a Culture of Collaboration, ...')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9ce4be4-3bb5-4a85-96ba-2039dfcd74e0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tF2Cxc:nth-child(2) .LC20lb > span",
+      "targets": [
+        ["css=.tF2Cxc:nth-child(2) .LC20lb > span", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/a/h3/span", "xpath:idRelative"],
+        ["xpath=//h3/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Effective DevOps: Building a Culture of ... - Amazon.com')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "baa8e340-b85b-418c-ac42-f21b22e2ba8c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=add-to-cart-button-ubb",
+      "targets": [
+        ["id=add-to-cart-button-ubb", "id"],
+        ["name=submit.add-to-cart-ubb", "name"],
+        ["css=#add-to-cart-button-ubb", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button-ubb']", "xpath:attributes"],
+        ["xpath=//span[@id='submit.add-to-cart-ubb']/span/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a11992ac-b024-4bc3-8fcc-433692b7277c",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-button-ubb",
+      "targets": [
+        ["id=add-to-cart-button-ubb", "id"],
+        ["name=submit.add-to-cart-ubb", "name"],
+        ["css=#add-to-cart-button-ubb", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button-ubb']", "xpath:attributes"],
+        ["xpath=//span[@id='submit.add-to-cart-ubb']/span/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68ec0a57-501b-4fb5-8af1-66d9d0ee37df",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=add-to-cart-button-ubb",
+      "targets": [
+        ["id=add-to-cart-button-ubb", "id"],
+        ["name=submit.add-to-cart-ubb", "name"],
+        ["css=#add-to-cart-button-ubb", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button-ubb']", "xpath:attributes"],
+        ["xpath=//span[@id='submit.add-to-cart-ubb']/span/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0055447-1fd7-4969-95fe-fde6065fac20",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=nav-link-accountList",
+      "targets": [
+        ["id=nav-link-accountList", "id"],
+        ["css=#nav-link-accountList", "css:finder"],
+        ["xpath=//a[@id='nav-link-accountList']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-tools']/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.amazon.com/-/es/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fhuc%2Fview.html%3Fie%3DUTF8%26newItems%3DCa583eafc-f39f-4aeb-b8bd-062f67b7cc70%252C1%26ref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&')]", "xpath:href"],
+        ["xpath=//div[3]/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7a1258ed-7b4a-4121-8a65-4dc0138cf3be",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["321a56b0-951f-43f2-a138-207c4e1b88db"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
