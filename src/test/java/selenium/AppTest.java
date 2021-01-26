@@ -4,6 +4,8 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,7 +24,7 @@ public class AppTest
     @Before
     public void setUp(){
         System.out.println("Iniciando configuración...");
-        System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","drivers/chromedriver");
         driver = new ChromeDriver();
         driver.get("https://www.amazon.com");
         driver.manage().window().maximize();
@@ -36,8 +38,17 @@ public class AppTest
     {
         System.out.println("Iniciando Pruebas...");
         WebElement searchbox = driver.findElement(By.name("q"));
-        searchbox.sendKeys("Libros de Devops");
+        searchbox.sendKeys("Libros DevOps");
         searchbox.submit();
+        //assertEquals("Libros DevOps", driver.getTitle());
+    }
+
+    @Test
+    public void compraLibroAmazon() {
+        driver.get("https://www.google.com/");
+        driver.manage().window().setSize(new Dimension(1227, 560));
+        driver.findElement(By.name("q")).sendKeys("Libros de Devop");
+        driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
         driver.findElement(By.cssSelector(".ct5Ked:nth-child(3) .keP9hb")).click();
         {
           WebElement element = driver.findElement(By.cssSelector(".s1SShd .keP9hb"));
@@ -67,6 +78,5 @@ public class AppTest
           Actions builder = new Actions(driver);
           builder.moveToElement(element).perform();
         }
-      
-    }
+      }
 }
