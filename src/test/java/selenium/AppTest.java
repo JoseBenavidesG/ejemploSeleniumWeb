@@ -83,8 +83,6 @@ public class AppTest
     @Test
     public void buscarenAmazon()
     {
-        System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
-        driver = new ChromeDriver();
         driver.get("https://www.amazon.com");
         driver.manage().window().maximize();
         WebElement searchbox = driver.findElement(By.id("twotabsearchtextbox"));
