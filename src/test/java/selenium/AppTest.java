@@ -79,4 +79,17 @@ public class AppTest
           builder.moveToElement(element).perform();
         }
       }
+    
+    @Test
+    public void buscarenAmazon()
+    {
+        System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.get("https://www.amazon.com");
+        driver.manage().window().maximize();
+        WebElement searchbox = driver.findElement(By.id("twotabsearchtextbox"));
+        searchbox.sendKeys("The Phonix project");
+        searchbox.submit();
+        //assertEquals("The Phonix project", driver.getTitle());
+    }
 }
